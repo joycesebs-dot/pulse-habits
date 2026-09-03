@@ -27,3 +27,7 @@ Do not open `index.html` directly from a downloaded ZIP and expect PWA/offline i
 
 ## v3 date fix
 Pulse now uses the phone's local calendar date for dates and daily records, preventing IST from displaying the previous UTC day.
+
+
+## v5 motivation update
+Rewards are now intentionally secret until unlocked. Milestones are spaced out at 7, 14, 30, 60, 90, 120, 180 and 365 Perfect Days, with real-world treats selected from a small reward pool. Earned rewards are stored in IndexedDB.
