@@ -58,7 +58,7 @@ const rewards=[
 {days:100,icon:'🎁',name:'Big Reward',text:'Choose one meaningful treat you have been saving for.'}
 ];
 const key=k=>new Date(k+'T12:00:00');
-const dateKey=d=>{let x=new Date(d);return x.toISOString().slice(0,10)};
+const dateKey=d=>{let x=new Date(d);let y=x.getFullYear(),m=String(x.getMonth()+1).padStart(2,'0'),day=String(x.getDate()).padStart(2,'0');return `${y}-${m}-${day}`};
 const today=dateKey(new Date());
 let state=null;
 const DB_NAME='PulseHabitsDB', DB_VERSION=1, STORE='app';

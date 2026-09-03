@@ -23,3 +23,7 @@ No login is required by Pulse. Data is stored locally in the browser/site on the
 
 ## Important
 Do not open `index.html` directly from a downloaded ZIP and expect PWA/offline installation to work. Service workers require a secure context (normally HTTPS); `file://` pages are not suitable for this. Once hosted on HTTPS, refresh/reopen the site normally and then install it from Chrome.
+
+
+## v3 date fix
+Pulse now uses the phone's local calendar date for dates and daily records, preventing IST from displaying the previous UTC day.
