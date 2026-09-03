@@ -31,3 +31,10 @@ Pulse now uses the phone's local calendar date for dates and daily records, prev
 
 ## v5 motivation update
 Rewards are now intentionally secret until unlocked. Milestones are spaced out at 7, 14, 30, 60, 90, 120, 180 and 365 Perfect Days, with real-world treats selected from a small reward pool. Earned rewards are stored in IndexedDB.
+
+
+## v6
+- Secret milestone rewards are hidden until earned.
+- Rewards are spaced at 7, 14, 30, 60, 90, 120, 180 and 365 Perfect Days.
+- Workout section now uses a weight-loss-focused weekly plan with strength, cardio, intervals and active recovery.
+- Existing IndexedDB state is preserved when updating.

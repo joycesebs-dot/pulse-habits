@@ -10,6 +10,8 @@
 <style>
 :root{--bg:#f7f7f5;--card:#fff;--text:#17202a;--muted:#707784;--line:#e7e7e2;--accent:#6d5dfc;--accent2:#efeefe;--good:#15803d;--danger:#c2410c;--shadow:0 8px 30px #1118270d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer;border:0}.app{max-width:720px;margin:auto;min-height:100vh;padding-bottom:92px}.top{padding:28px 20px 10px;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;font-size:25px;letter-spacing:-.6px}.sub{font-size:12px;color:var(--muted);margin-top:3px}.iconbtn{background:var(--card);border:1px solid var(--line);border-radius:14px;width:42px;height:42px}.screen{padding:12px 20px}.hero{background:linear-gradient(135deg,#18152f,#4137a5);color:#fff;border-radius:24px;padding:22px;box-shadow:var(--shadow);margin-bottom:16px}.hero h1{font-size:25px;margin:0 0 4px}.hero p{margin:0;color:#d9d7f6;font-size:13px}.progressbar{height:9px;background:#ffffff2b;border-radius:20px;margin:18px 0 10px;overflow:hidden}.progressbar>div{height:100%;background:#fff;border-radius:20px;transition:.3s}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.stat{font-size:13px;color:#e7e5ff}.perfect{font-weight:800;font-size:20px;margin-top:4px}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:15px;margin:10px 0;box-shadow:0 4px 18px #11182706}.habit{display:flex;align-items:center;gap:13px}.check{width:28px;height:28px;border:2px solid #d7d9de;border-radius:10px;background:transparent;display:grid;place-items:center;flex:0 0 auto}.check.done{background:var(--accent);border-color:var(--accent);color:#fff}.habitmain{flex:1}.habitname{font-weight:700}.meta{font-size:12px;color:var(--muted);margin-top:3px}.streak{font-size:12px;font-weight:700;color:#e07a00;white-space:nowrap}.sectiontitle{font-size:14px;font-weight:800;margin:22px 2px 8px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.tabs{position:fixed;z-index:10;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(16px);border-top:1px solid var(--line);display:flex;justify-content:center}.tabsin{max-width:720px;width:100%;display:flex;justify-content:space-around;padding:9px 8px calc(9px + env(safe-area-inset-bottom))}.tab{background:transparent;color:var(--muted);padding:6px 12px;border-radius:14px;font-size:11px}.tab.active{color:var(--accent);font-weight:800;background:var(--accent2)}.tab span{display:block;font-size:20px;margin-bottom:1px}.primary{background:var(--accent);color:#fff;padding:12px 16px;border-radius:14px;font-weight:800}.secondary{background:var(--accent2);color:var(--accent);padding:11px 14px;border-radius:14px;font-weight:700}.danger{background:#fff1eb;color:var(--danger);padding:9px 12px;border-radius:12px}.empty{text-align:center;color:var(--muted);padding:30px 15px}.form{display:grid;gap:11px}.form input,.form select{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:#fff}.days{display:flex;gap:7px;flex-wrap:wrap}.day{padding:8px 10px;border-radius:11px;background:#f0f1f3;color:#555}.day.on{background:var(--accent);color:#fff}.modal{position:fixed;inset:0;background:#11182766;display:grid;place-items:end center;z-index:20}.modalbox{background:var(--card);width:min(720px,100%);max-height:90vh;overflow:auto;border-radius:24px 24px 0 0;padding:20px}.close{float:right;background:#f1f1f1;border-radius:50%;width:34px;height:34px}.exercise{padding:14px 0;border-bottom:1px solid var(--line)}.exercise:last-child{border:0}.pill{display:inline-block;padding:5px 9px;border-radius:10px;background:#f1f0ff;color:var(--accent);font-size:11px;font-weight:700}.reward{display:flex;align-items:center;gap:12px}.rewardicon{font-size:31px}.badge{font-size:11px;background:#fff5d8;color:#9a6700;padding:5px 8px;border-radius:9px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.metric{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:15px}.metric b{font-size:25px}.muted{color:var(--muted)}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.cal{aspect-ratio:1;border-radius:9px;background:#ececea;font-size:12px;display:grid;place-items:center;color:var(--text);border:0}.cal.blank{background:transparent}.cal.good{background:#a7f3d0;color:#065f46;font-weight:800}.cal.perfect{background:#6d5dfc;color:white}.cal.current{outline:3px solid #c7c2ff;outline-offset:1px}.weekdays{gap:6px;margin-bottom:6px}.weekdays div{text-align:center;color:var(--muted);font-size:10px;font-weight:800}.cal.good{background:#a7f3d0;color:#065f46;font-weight:800}.cal.perfect{background:#6d5dfc;color:white}.toast{position:fixed;z-index:30;left:50%;bottom:90px;transform:translateX(-50%);background:#171717;color:#fff;padding:12px 16px;border-radius:14px;font-size:13px;box-shadow:0 10px 30px #0003}.rewardpop{position:fixed;inset:0;background:#17122ecc;z-index:40;display:grid;place-items:center;padding:25px}.rewardcard{background:#fff;border-radius:28px;padding:30px;text-align:center;max-width:400px;width:100%}.rewardbig{font-size:60px}.rewardcard h2{margin:8px 0}.rewardcard p{color:var(--muted)}
+.rewardvault{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}.vaultitem{display:flex;align-items:center;gap:9px;padding:10px;border:1px solid var(--line);border-radius:14px;background:#fafafa}.vaultitem.unlocked{background:#f5f2ff;border-color:#dcd7ff}.vaultitem .rewardicon{font-size:22px}@media(max-width:430px){.rewardvault{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -42,21 +44,85 @@ const verses=[
 ['Romans 12:12','Be joyful in hope, patient in affliction, faithful in prayer.']
 ];
 const workouts={
-0:{name:'Sunday — Gentle Reset',items:[['Easy walk','20 min'],['Mobility flow','10 min'],['Bodyweight squats','3 × 10'],['Glute bridges','3 × 12'],['Plank','3 × 30 sec']]},
-1:{name:'Monday — Full Body',items:[['Warm-up','8 min'],['Squats','3 × 12'],['Push-ups','3 × 8–12'],['Romanian deadlift','3 × 10'],['Rows','3 × 12'],['Plank','3 × 40 sec']]},
-2:{name:'Tuesday — Upper Body + Cardio',items:[['Warm-up','7 min'],['Shoulder press','3 × 10'],['Rows','3 × 12'],['Biceps curls','3 × 12'],['Triceps extensions','3 × 12'],['Easy cardio','20 min']]},
-3:{name:'Wednesday — Full Body + Cardio',items:[['Warm-up','8 min'],['Reverse lunges','3 × 10/side'],['Incline push-ups','3 × 10'],['Glute bridges','3 × 15'],['Dead bug','3 × 10/side'],['Cardio','20 min']]},
-4:{name:'Thursday — Glutes + Core',items:[['Warm-up','7 min'],['Hip thrusts','4 × 12'],['Goblet squats','3 × 12'],['Lateral lunges','3 × 10/side'],['Dead bug','3 × 10/side'],['Side plank','3 × 25 sec/side']]},
-5:{name:'Friday — Strength + Conditioning',items:[['Warm-up','8 min'],['Step-ups','3 × 10/side'],['Push-ups','3 × 8–12'],['Rows','3 × 12'],['Squats','3 × 12'],['Conditioning','15 min']]},
-6:{name:'Saturday — Active Recovery',items:[['Brisk walk','30 min'],['Full-body stretch','15 min'],['Breathing / mobility','10 min']]}
+0:{name:'Sunday — Active Recovery + Steps',focus:'Weight-loss friendly recovery',items:[['Brisk walk','35–45 min'],['Mobility flow','10 min'],['Bodyweight squats','3 × 12'],['Glute bridges','3 × 15'],['Dead bug','3 × 10/side'],['Easy stretch','5 min']]},
+1:{name:'Monday — Full Body Fat-Loss Strength',focus:'Strength + steady cardio',items:[['Warm-up walk / march','8 min'],['Squats','3 × 12'],['Incline push-ups','3 × 8–12'],['Romanian deadlift','3 × 10'],['Rows','3 × 12'],['Step-ups','3 × 10/side'],['Brisk cardio','15–20 min'],['Cool-down','5 min']]},
+2:{name:'Tuesday — Cardio Intervals + Core',focus:'Low-impact calorie-burning intervals',items:[['Warm-up','8 min'],['Fast walk / easy jog','2 min'],['Easy pace','2 min'],['Repeat the interval block','5 rounds'],['Glute bridge','3 × 15'],['Dead bug','3 × 10/side'],['Plank','3 × 30–40 sec'],['Cool-down walk','5 min']]},
+3:{name:'Wednesday — Full Body Circuit',focus:'Strength circuit + cardio finish',items:[['Warm-up','8 min'],['Reverse lunges','3 × 10/side'],['Push-ups / incline push-ups','3 × 8–12'],['Goblet squats','3 × 12'],['Rows','3 × 12'],['Shoulder press','3 × 10'],['Circuit finisher','12–15 min'],['Cool-down','5 min']]},
+4:{name:'Thursday — Glutes + Core + Walk',focus:'Lower body strength + steady movement',items:[['Warm-up','8 min'],['Hip thrusts','4 × 12'],['Goblet squats','3 × 12'],['Lateral lunges','3 × 10/side'],['Step-ups','3 × 10/side'],['Side plank','3 × 25 sec/side'],['Brisk walk','20 min'],['Cool-down','5 min']]},
+5:{name:'Friday — Strength + Conditioning',focus:'Full-body conditioning',items:[['Warm-up','8 min'],['Squats','3 × 12'],['Rows','3 × 12'],['Push-ups / incline push-ups','3 × 8–12'],['Step-ups','3 × 10/side'],['Romanian deadlift','3 × 10'],['Conditioning intervals','15 min'],['Cool-down','5 min']]},
+6:{name:'Saturday — Long Easy Cardio',focus:'Build movement volume without exhausting yourself',items:[['Brisk walk','45–60 min'],['Mobility','10 min'],['Glute bridges','2 × 15'],['Bird dog','2 × 10/side'],['Easy stretch','5 min']]}
 };
-const rewards=[
+const legacyRewards=[];
+
 {days:7,icon:'🍫',name:'Chocolate Treat',text:'Treat yourself to a chocolate today.'},
 {days:21,icon:'🍔',name:'Burger Day',text:'Order your favourite burger or meal today.'},
 {days:30,icon:'💄',name:'Makeup Treat',text:'Buy one makeup item you have genuinely been wanting.'},
 {days:60,icon:'👗',name:'Dress Day',text:'Buy yourself a dress or outfit you love.'},
 {days:100,icon:'🎁',name:'Big Reward',text:'Choose one meaningful treat you have been saving for.'}
 ];
+
+const rewardMilestones=[
+ {days:7,icon:'🎁',title:'A little treat'},
+ {days:14,icon:'✨',title:'A lovely indulgence'},
+ {days:30,icon:'🍔',title:'A proper treat'},
+ {days:60,icon:'💄',title:'Something you’ve been eyeing'},
+ {days:90,icon:'👗',title:'A wardrobe treat'},
+ {days:120,icon:'💆',title:'You really earned this'},
+ {days:180,icon:'🎟️',title:'A memorable experience'},
+ {days:365,icon:'🏆',title:'The big one'}
+];
+const rewardPool={
+ 7:[
+  {icon:'🍫',name:'Chocolate Today',text:'Treat yourself to one really good chocolate or dessert today. No guilt — you earned it.'},
+  {icon:'☕',name:'Fancy Coffee',text:'Get yourself the café drink you would normally talk yourself out of.'},
+  {icon:'🎬',name:'Cosy Movie Night',text:'Have a proper movie night with your favourite snack and zero productivity guilt.'}
+ ],
+ 14:[
+  {icon:'💐',name:'Flowers for You',text:'Buy yourself a small bunch of flowers and enjoy having them around.'},
+  {icon:'🍨',name:'Little Luxury',text:'Choose one small indulgence you genuinely love — dessert, coffee, or something similar.'},
+  {icon:'📚',name:'Bookstore Treat',text:'Pick one beautiful book you have genuinely wanted. Reading is a habit; this is the treat.'}
+ ],
+ 30:[
+  {icon:'🍔',name:'Burger Day',text:'Order the burger you have been craving. Today, it is officially a reward.'},
+  {icon:'🍕',name:'Favourite Meal',text:'Order your favourite comfort meal and enjoy it properly.'},
+  {icon:'🍜',name:'Dinner Out',text:'Go out for a meal somewhere you have been wanting to try.'}
+ ],
+ 60:[
+  {icon:'💄',name:'Makeup Treat',text:'Buy one makeup item you have genuinely wanted — not a random impulse buy.'},
+  {icon:'💅',name:'Self-Care Treat',text:'Book a manicure, pedicure, salon visit, or another small self-care treat.'},
+  {icon:'🧴',name:'Beauty Wishlist Pick',text:'Choose one beauty/self-care item that has been sitting on your intentional wishlist.'}
+ ],
+ 90:[
+  {icon:'👗',name:'Dress Day',text:'Buy yourself a dress or outfit you absolutely love.'},
+  {icon:'👟',name:'Something You’ll Wear',text:'Buy one quality clothing or accessory item you have been intentionally saving for.'},
+  {icon:'👜',name:'Wardrobe Treat',text:'Choose one beautiful wardrobe piece — thoughtfully, not impulsively.'}
+ ],
+ 120:[
+  {icon:'💆',name:'Proper Self-Care',text:'Book yourself a massage, spa treatment, salon visit, or another meaningful self-care experience.'},
+  {icon:'🍽️',name:'Nice Dinner',text:'Have a genuinely nice dinner somewhere special.'},
+  {icon:'🛍️',name:'Wishlist Pick',text:'Choose one meaningful item you have wanted for a while and buy it without guilt.'}
+ ],
+ 180:[
+  {icon:'🏖️',name:'Day-Off Adventure',text:'Plan a small day out, experience, or mini adventure just for fun.'},
+  {icon:'🎟️',name:'Experience Treat',text:'Spend on an experience you will remember rather than a random purchase.'},
+  {icon:'🍾',name:'Celebration Dinner',text:'Have a proper celebration meal somewhere you have been wanting to try.'}
+ ],
+ 365:[
+  {icon:'🏆',name:'The Big Celebration',text:'Choose a genuinely special reward for completing a whole year of showing up for yourself.'},
+  {icon:'✨',name:'One Big Yes',text:'Pick one meaningful thing you have been saving for and make it your anniversary reward.'}
+ ]
+};
+function hiddenRewards(){return rewardMilestones.map(x=>({...x,locked:true}))}
+function rewardForMilestone(days){
+ if(!state.rewardReveals)state.rewardReveals={};
+ if(state.rewardReveals[days])return state.rewardReveals[days];
+ let pool=rewardPool[days]||[];
+ if(!pool.length)return null;
+ let r=pool[Math.floor(Math.random()*pool.length)];
+ state.rewardReveals[days]=r;
+ return r;
+}
+const rewards=hiddenRewards();
 const key=k=>new Date(k+'T12:00:00');
 const dateKey=d=>{let x=new Date(d);let y=x.getFullYear(),m=String(x.getMonth()+1).padStart(2,'0'),day=String(x.getDate()).padStart(2,'0');return `${y}-${m}-${day}`};
 const today=dateKey(new Date());
@@ -80,10 +146,10 @@ async function loadState(){
      r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);
    });
    db.close();
-   return value||{habits:initialHabits,checks:{},workouts:{},earned:[],freeze:1,rewards:rewards,settings:{theme:'light'}};
+   return value||{habits:initialHabits,checks:{},workouts:{},earned:[],freeze:1,rewards:rewards,rewardReveals:{},settings:{theme:'light'}};
  }catch(e){
    const fallback=localStorage.getItem('pulse-fallback');
-   return fallback?JSON.parse(fallback):{habits:initialHabits,checks:{},workouts:{},earned:[],freeze:1,rewards:rewards,settings:{theme:'light'}};
+   return fallback?JSON.parse(fallback):{habits:initialHabits,checks:{},workouts:{},earned:[],freeze:1,rewards:rewards,rewardReveals:{},settings:{theme:'light'}};
  }
 }
 async function save(){
@@ -113,8 +179,23 @@ function perfectStreak(){
 function fmt(k){return key(k).toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'})}
 function verse(){return verses[Math.floor(key(today).getTime()/86400000)%verses.length]}
 function toast(t){let e=document.createElement('div');e.className='toast';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2200)}
-function checkReward(){let ps=perfectStreak(), candidates=state.rewards.filter(r=>r.days===ps&&!state.earned.includes(ps));if(candidates.length){state.earned.push(ps);save();setTimeout(()=>rewardPop(candidates[0]),300)}}
-function rewardPop(r){let e=document.createElement('div');e.className='rewardpop';e.innerHTML=`<div class="rewardcard"><div class="rewardbig">${r.icon}</div><div class="badge">${r.days} PERFECT DAYS</div><h2>${r.name}</h2><p>${r.text}</p><button class="primary" onclick="this.closest('.rewardpop').remove()">I've earned it ✨</button></div>`;document.body.appendChild(e)}
+function checkReward(){
+ let ps=perfectStreak();
+ let candidate=rewardMilestones.find(r=>r.days===ps&&!state.earned.includes(ps));
+ if(candidate){
+   let reward=rewardForMilestone(ps);
+   if(reward){
+     state.earned.push(ps);
+     save();
+     setTimeout(()=>rewardPop(reward,candidate.days),350);
+   }
+ }
+}
+function rewardPop(r,days){
+ let e=document.createElement('div');e.className='rewardpop';
+ e.innerHTML=`<div class="rewardcard"><div class="rewardbig">${r.icon}</div><div class="badge">${days} PERFECT DAYS</div><h2>🎉 Mystery reward unlocked!</h2><h3 style="font-size:22px;margin:10px 0">${r.name}</h3><p>${r.text}</p><button class="primary" onclick="this.closest('.rewardpop').remove()">I earned this ✨</button></div>`;
+ document.body.appendChild(e);
+}
 function nav(tab){location.hash=tab}
 function render(){
  let tab=location.hash.slice(1)||'today';
@@ -134,7 +215,7 @@ function todayView(){
  </div>${tabs('today')}`;
 }
 function freqText(h){if((h.days||[]).length===7)return'Every day';return (h.days||[]).map(d=>['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d]).join(' • ')}
-function nextReward(ps){let r=state.rewards.find(x=>x.days>ps);return r?`${r.days} days`:'custom rewards'}
+function nextReward(ps){let r=rewardMilestones.find(x=>x.days>ps);return r?`${r.days} days 🎁`:'you’ve reached the end of the vault'} days`:'custom rewards'}
 function habitsView(){
  let hs=state.habits.map(h=>`<div class="card habit"><div style="font-size:25px">${h.icon}</div><div class="habitmain"><div class="habitname">${h.name}</div><div class="meta">${freqText(h)} · 🔥 ${streak(h.id)}</div></div><button class="secondary" onclick="editHabit(${h.id})">Edit</button></div>`).join('');
  document.getElementById('app').innerHTML=header('Habits','Make your routine fit your life')+`<div class="screen"><button class="primary" onclick="editHabit()">＋ Add habit</button><div class="sectiontitle">Your habits</div>${hs||'<div class="empty">Add your first habit.</div>'}<div class="sectiontitle">How scheduling works</div><div class="card muted">Each habit can have its own days. Only habits scheduled for a day count toward that day's completion and Perfect Day.</div></div>${tabs('habits')}`;
@@ -149,7 +230,7 @@ function editHabit(id){
 }
 function workoutView(){
  let w=workouts[dow(today)], doneW=!!state.workouts[today],items=w.items.map((x,i)=>`<div class="exercise"><div class="row"><div><b>${i+1}. ${x[0]}</b><div class="meta">${x[1]}</div></div><a class="secondary" target="_blank" href="https://www.youtube.com/results?search_query=${encodeURIComponent(x[0]+' exercise proper form')}">▶ Demo</a></div></div>`).join('');
- document.getElementById('app').innerHTML=header('Workout','A plan for today')+`<div class="screen"><div class="hero"><h1>${w.name}</h1><p>Move with good form. Adjust intensity to your level.</p></div><div class="card">${items}</div><button class="${doneW?'secondary':'primary'}" style="width:100%" onclick="state.workouts['${today}']=!state.workouts['${today}'];save();render()">${doneW?'✓ Workout completed':'Mark workout complete'}</button><div class="sectiontitle">This week's plan</div>${Object.entries(workouts).map(([d,x])=>`<div class="card row"><div><b>${x.name}</b><div class="meta">${x.items.length} exercises</div></div><span>${+d===dow(today)?'👉':''}</span></div>`).join('')}</div>${tabs('workout')}`;
+ document.getElementById('app').innerHTML=header('Workout','A plan for today')+`<div class="screen"><div class="hero"><div class="pill" style="background:#ffffff22;color:#fff">🔥 WEIGHT-LOSS FOCUS</div><h1 style="margin-top:8px">${w.name}</h1><p>${w.focus}. Adjust intensity to your level and swap impact exercises for low-impact versions when needed.</p></div><div class="card">${items}</div><button class="${doneW?'secondary':'primary'}" style="width:100%" onclick="state.workouts['${today}']=!state.workouts['${today}'];save();render()">${doneW?'✓ Workout completed':'Mark workout complete'}</button><div class="sectiontitle">🔥 Weight-loss workout approach</div><div class="card muted">Pulse combines strength work with walking/cardio because sustainable progress is about building a routine you can keep doing — not punishing yourself with workouts.</div><div class="sectiontitle">This week's plan</div>${Object.entries(workouts).map(([d,x])=>`<div class="card row"><div><b>${x.name}</b><div class="meta">${x.items.length} exercises</div></div><span>${+d===dow(today)?'👉':''}</span></div>`).join('')}</div>${tabs('workout')}`;
 }
 function monthName(y,m){return new Date(y,m,1).toLocaleDateString(undefined,{month:'long',year:'numeric'})}
 function monthCalendar(y,m){
@@ -199,7 +280,15 @@ function changeMonth(delta){
  if(p&&title){title.textContent=monthName(calendarYear,calendarMonth);p.innerHTML=monthCalendar(calendarYear,calendarMonth)}
 }
 function settingsView(){
- document.getElementById('app').innerHTML=header('More','Backup, rewards & settings')+`<div class="screen"><div class="sectiontitle">🎁 Reward bank</div><div class="card muted">Rewards are intentionally spaced out. You can edit the reward list in the app data below or use the built-in milestones.</div>${state.rewards.map(r=>`<div class="card reward"><div class="rewardicon">${r.icon}</div><div class="habitmain"><b>${r.days} Perfect Days — ${r.name}</b><div class="meta">${r.text}</div></div></div>`).join('')}<div class="sectiontitle">💾 Your data</div><div class="card"><p class="muted">Your data is stored in this app's IndexedDB database on this device. Export a backup occasionally so you can restore it after clearing site data or changing phones.</p><div class="row"><button class="primary" onclick="exportData()">Export backup</button><button class="secondary" onclick="document.getElementById('imp').click()">Import backup</button></div><input id="imp" type="file" accept="application/json" style="display:none" onchange="importData(this.files[0])"></div><div class="sectiontitle">📱 Install</div><div class="card"><div class="muted">Open Pulse from its HTTPS website in Chrome. Use the browser menu → <b>Add to Home screen</b> or <b>Install app</b>.</div><button id="installBtn" class="primary" style="margin-top:12px;display:none">Install Pulse</button></div><div class="sectiontitle">About</div><div class="card muted">Pulse is a personal habit + workout tracker. No login is required.</div></div>${tabs('settings')}`;
+ let unlocked=state.earned||[];
+ document.getElementById('app').innerHTML=header('More','Backup, rewards & settings')+`<div class="screen">
+ <div class="sectiontitle">🎁 Secret reward vault</div>
+ <div class="card"><b>Your rewards are supposed to be a surprise. 🤫</b><div class="meta">Milestones are spaced out so Pulse rewards consistency without turning every week into a shopping trip.</div>
+ <div class="rewardvault">${rewardMilestones.map(r=>{let got=unlocked.includes(r.days),rr=state.rewardReveals?.[r.days];return`<div class="vaultitem ${got?'unlocked':''}"><div class="rewardicon">${got?(rr?.icon||'🎁'):'🔒'}</div><div><b>${got?(rr?.name||'Reward unlocked'):r.days+' Perfect Days'}</b><div class="meta">${got?'Unlocked ✨':'Mystery reward'}</div></div></div>`}).join('')}</div></div>
+ <div class="sectiontitle">💾 Your data</div><div class="card"><p class="muted">Your data is stored locally in IndexedDB. Export a backup occasionally so you can restore it after clearing site data or changing phones.</p><div class="row"><button class="primary" onclick="exportData()">Export backup</button><button class="secondary" onclick="document.getElementById('imp').click()">Import backup</button></div><input id="imp" type="file" accept="application/json" style="display:none" onchange="importData(this.files[0])"></div>
+ <div class="sectiontitle">📱 Install</div><div class="card"><div class="muted">Use Chrome's menu → <b>Add to Home screen</b> or <b>Install app</b> when available.</div><button id="installBtn" class="primary" style="margin-top:12px;display:none">Install Pulse</button></div>
+ <div class="sectiontitle">About</div><div class="card muted">Pulse is a personal habit + workout tracker. No login is required.</div>
+ </div>${tabs('settings')}`;
 }
 function exportData(){let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='pulse-backup-'+today+'.json';a.click();URL.revokeObjectURL(a.href);toast('Backup exported.')}
 function importData(file){if(!file)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!x.habits||!x.checks)throw 0;state=x;save();render();toast('Backup restored.')}catch(e){toast('That backup could not be read.')}};r.readAsText(file)}
