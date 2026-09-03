@@ -1,0 +1,17 @@
+{
+  "name": "Pulse \u2014 Habits & Workouts",
+  "short_name": "Pulse",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f5",
+  "theme_color": "#111827",
+  "description": "Personal habit tracker and workout companion.",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
