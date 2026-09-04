@@ -38,3 +38,7 @@ Rewards are now intentionally secret until unlocked. Milestones are spaced out a
 - Rewards are spaced at 7, 14, 30, 60, 90, 120, 180 and 365 Perfect Days.
 - Workout section now uses a weight-loss-focused weekly plan with strength, cardio, intervals and active recovery.
 - Existing IndexedDB state is preserved when updating.
+
+
+## v7 hotfix
+Fixed a JavaScript syntax error that could cause a completely blank screen in v6. The cache version is also bumped to force the updated app shell to load.

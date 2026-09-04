@@ -54,13 +54,6 @@ const workouts={
 };
 const legacyRewards=[];
 
-{days:7,icon:'🍫',name:'Chocolate Treat',text:'Treat yourself to a chocolate today.'},
-{days:21,icon:'🍔',name:'Burger Day',text:'Order your favourite burger or meal today.'},
-{days:30,icon:'💄',name:'Makeup Treat',text:'Buy one makeup item you have genuinely been wanting.'},
-{days:60,icon:'👗',name:'Dress Day',text:'Buy yourself a dress or outfit you love.'},
-{days:100,icon:'🎁',name:'Big Reward',text:'Choose one meaningful treat you have been saving for.'}
-];
-
 const rewardMilestones=[
  {days:7,icon:'🎁',title:'A little treat'},
  {days:14,icon:'✨',title:'A lovely indulgence'},
@@ -215,7 +208,7 @@ function todayView(){
  </div>${tabs('today')}`;
 }
 function freqText(h){if((h.days||[]).length===7)return'Every day';return (h.days||[]).map(d=>['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d]).join(' • ')}
-function nextReward(ps){let r=rewardMilestones.find(x=>x.days>ps);return r?`${r.days} days 🎁`:'you’ve reached the end of the vault'} days`:'custom rewards'}
+function nextReward(ps){let r=rewardMilestones.find(x=>x.days>ps);return r?`${r.days} days 🎁`:'you’ve reached the end of the vault'}
 function habitsView(){
  let hs=state.habits.map(h=>`<div class="card habit"><div style="font-size:25px">${h.icon}</div><div class="habitmain"><div class="habitname">${h.name}</div><div class="meta">${freqText(h)} · 🔥 ${streak(h.id)}</div></div><button class="secondary" onclick="editHabit(${h.id})">Edit</button></div>`).join('');
  document.getElementById('app').innerHTML=header('Habits','Make your routine fit your life')+`<div class="screen"><button class="primary" onclick="editHabit()">＋ Add habit</button><div class="sectiontitle">Your habits</div>${hs||'<div class="empty">Add your first habit.</div>'}<div class="sectiontitle">How scheduling works</div><div class="card muted">Each habit can have its own days. Only habits scheduled for a day count toward that day's completion and Perfect Day.</div></div>${tabs('habits')}`;
